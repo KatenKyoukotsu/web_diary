@@ -1,4 +1,4 @@
-# Personal-Diary (Flask,Mysql)
+# Web-Diary (Flask,Mysql)
 
 #Installation
 1. Clone the repo
