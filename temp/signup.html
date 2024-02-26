@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all.2s linear;
+        }
+        .form-container
+        {
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(120deg,#2980b9, #8e44ad) no-repeat;
+            background-size: cover;
+            perspective: 1000px;
+        }
+        .form-container form
+        {
+            height: 500px;
+            width: 350px;
+            background:rgba(255, 255, 255, .1);
+            text-align: center;
+            border-radius: 5px;
+            box-shadow:0 5px 15px rgba(0, 0, 0,.3);
+            border-top: 1px solid rgba(255,255, 255, .3);
+            border-left:1px solid rgba(255,255, 255, .3) ;
+            backdrop-filter: blur(10px);  
+            transform-style: preserve-3d;
+        }
+        .form-container form h3{
+            font-size: 30px;
+            padding: 30px 0;
+            color: rgb(255, 255, 255);
+            letter-spacing: 3px;
+        }
+        .form-container form i
+        {
+             padding: 0 5px;
+             font-size: 20px;
+             color: #bbb;
+        }
+        .form-container form input
+        {
+            outline: none;
+            border: none;
+            height: 40px;
+            width: 82%;
+            border-radius: 1%;
+           background-color: black;
+            color: aliceblue;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .5) inset;
+            font-size: 17px;
+            padding: 0 10px;
+            margin: 15px 0;
+            letter-spacing: 1px;
+        
+        }
+        .form-container form input[type=submit]
+        {
+            width: 90%;
+            cursor: pointer;
+            background: linear-gradient(90deg,deeppink,blueviolet);
+            margin-top: 30px;
+            border-radius: 50px;   
+        }
+        .form-container form input[type=submit]:hover{
+        letter-spacing: 4px;
+        }
+        h4{
+            color: red;
+        }
+        input[type="password"] {
+            font-family: Verdana;
+          }
+        .signup_link
+        {
+            color: aliceblue;
+        }
+        h3{
+            font-family: 'Cookie', cursive;
+        }
+        h2{
+            color: azure;
+        }
+    </style>
+    <div class="form-container">
+        <form method="post" action="{{url_for('signup')}}" id="form">
+            <h3>Sign Up</h3>
+            <i class="fas fa-user"></i>
+            
+            <input type="text" name="name" autocomplete="off" placeholder="Your Name">
+
+
+            <i class="fas fa-phone"></i>
+            
+            <input type="text" name="phone" autocomplete="off" placeholder="Phone Number">
+
+
+
+
+            <i class="fas fa-email"></i>
+            
+            <input type="email" name="email" autocomplete="off" placeholder="Your Email Adress">
+
+            
+            
+            <i class="fas fa-lock"></i>
+            
+            
+            <input type="password" name="password" required  placeholder="Your New Password">
+            <input type="submit" value="Sign Up">
+            <div class="signup_link">
+                Already got an account? <a href="{{url_for('index')}}">Sign in</a>
+              </div>
+        </form>
+    </div>
+    <script>
+        var form=document.getElementById('form');
+form.addEventListener('mousemove',(e)=>{
+var x=(window.innerWidth/2-e.pageX)/12;
+var y=(window.innerHeight/2-e.pageY)/12;
+form.style.transform='rotateX('+x + 'deg) rotateY(' + y + 'deg)';
+});
+form.addEventListener('mouseleave',function()
+{
+    form.style.transform='rotateX(0deg) rotateY(0deg)';
+});
+    </script>
+</body>
+</html>

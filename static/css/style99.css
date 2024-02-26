@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+One&family=Zen+Antique&display=swap');
+* {
+    outline:none;
+      border:none;
+      margin:0px;
+      padding:0px;
+      font-family:Courier, monospace;
+  }
+  body {
+      background:#333 url(https://static.tumblr.com/maopbtg/a5emgtoju/inflicted.png) repeat;        
+  }
+  #paper {
+      color:#FFF;
+      font-size:20px;
+  }
+  #margin {
+      margin-left:12px;
+      margin-bottom:20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none; 
+  }
+  #text {
+      width:600px;
+      overflow:hidden;
+      background-color:#FFF;
+      color:#222;
+      font-family:Courier, monospace;
+      font-weight:normal;
+      font-size:24px;
+      resize:none;
+      line-height:40px;
+      padding-left:100px;
+      padding-right:100px;
+      padding-top:45px;
+      padding-bottom:34px;
+      background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+      background-repeat:repeat-y, repeat;
+      -webkit-border-radius:12px;
+      border-radius:12px;
+      -webkit-box-shadow: 0px 2px 14px #000;
+      box-shadow: 0px 2px 14px #000;
+      border-top:1px solid #FFF;
+      border-bottom:1px solid #FFF;
+  }
+  #title {
+      background-color:transparent;
+      border-bottom:3px solid #FFF;
+      color:#FFF;
+      font-size:20px;
+      font-family:Courier, monospace;
+      height:28px;
+      font-weight:bold;
+      width:220px;
+  }
+  #button {
+      cursor:pointer;
+      margin-top:20px;
+      float:right;
+      height:40px;
+      position: absolute;
+      left: 380px;
+      padding-left:24px;
+      padding-right:24px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight:bold;
+      font-size:20px;
+      color:#FFF;
+      text-shadow: 0px -1px 0px #000000;
+      -webkit-border-radius:8px;
+      border-radius:8px;
+      border-top:1px solid #FFF;
+      -webkit-box-shadow: 0px 2px 14px #000;
+      box-shadow: 0px 2px 14px #000;
+      background-color: #62add6;
+      background-image:url(https://static.tumblr.com/maopbtg/ZHLmgtok7/button.png);
+      background-repeat:repeat-x;
+  }
+  #button:active {
+      zoom: 1;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+  }
+  #button:focus {
+      zoom: 1;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+  }
+  #wrapper {
+      width:700px;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:24px;
+      margin-bottom:100px;
+  }
+th
+{
+  background-color: gold;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+}
+td{
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+  background-color: #FFF;
+    font-family: 'Zen Antique', serif;
+}
+.button-27 {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 48%;
+    will-change: transform;
+  }
+  
+  .button-27:disabled {
+    pointer-events: none;
+  }
+  
+  .button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    background-color: rgb(111, 209, 13);
+  }
+  
+  .button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #FFF;
+   
+  }
+
+.nameglow
+{
+    color: rgb(255, 255, 255);
+    font-family: 'Mochiy Pop One', sans-serif;
+    animation-name: ajaira;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes ajaira
+{
+    0%   {color: rgb(255, 255, 255);}
+ 
+  50%  {color: rgb(7, 255, 48);}
+}
+.navbar-nav
+{
+  font-family: monospace;
+}
